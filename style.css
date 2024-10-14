@@ -1,0 +1,305 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  transition: all 300ms;
+  background-color: #282828;
+}
+
+.container {
+  position: absolute;
+  top: 21%;
+
+  left: 33%;
+  height: 54%;
+  width: 36%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.container .box {
+  height: 30%;
+  width: 30%;
+  border: 3px solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+  transition: all 300ms;
+
+  border-radius: 1px;
+}
+
+#box1,
+#box2,
+#box3,
+#box11,
+#box21,
+#box31,
+#box12,
+#box22,
+#box32,
+#box13,
+#box23,
+#box33,
+#box14,
+#box24,
+#box34,
+#box15,
+#box25,
+#box35,
+#box16,
+#box26,
+#box36,
+#box17,
+#box27,
+#box37,
+#box18,
+#box28,
+#box38,
+#box19,
+#box29,
+#box39 {
+  border-left: 0px;
+  border-top: 0px;
+}
+
+#box3,
+#box6,
+#box9,
+#box31,
+#box61,
+#box91,
+#box32,
+#box62,
+#box92,
+#box33,
+#box63,
+#box93,
+#box34,
+#box64,
+#box94,
+#box35,
+#box65,
+#box95,
+#box36,
+#box66,
+#box96,
+#box37,
+#box67,
+#box97,
+#box38,
+#box68,
+#box98,
+#box39,
+#box69,
+#box99 {
+  border-right: 0px;
+}
+
+#box7,
+#box71,
+#box72,
+#box73,
+#box74,
+#box75,
+#box76,
+#box77,
+#box78,
+#box79 {
+  border-left: 0px;
+}
+
+#box4,
+#box5,
+#box6,
+#box41,
+#box51,
+#box61,
+#box42,
+#box52,
+#box62,
+#box43,
+#box53,
+#box63,
+#box44,
+#box54,
+#box64,
+#box45,
+#box55,
+#box65,
+#box46,
+#box56,
+#box66,
+#box47,
+#box57,
+#box67,
+#box48,
+#box58,
+#box68,
+#box49,
+#box59,
+#box69 {
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+#box7,
+#box8,
+#box9,
+#box71,
+#box81,
+#box91,
+#box72,
+#box82,
+#box92,
+#box73,
+#box83,
+#box93,
+#box74,
+#box84,
+#box94,
+#box75,
+#box85,
+#box95,
+#box76,
+#box86,
+#box96,
+#box77,
+#box87,
+#box97,
+#box78,
+#box88,
+#box98,
+#box79,
+#box89,
+#box99 {
+  border-bottom: 0px;
+  border-right: 0px;
+}
+#con > .box {
+  color: red;
+}
+
+#con1 {
+  z-index: -1;
+}
+#con1 > .box {
+  color: whitesmoke;
+}
+
+#con2 {
+  z-index: -2;
+}
+
+#con2 > .box {
+  color: red;
+}
+
+#con3 {
+  z-index: -3;
+}
+#con3 > .box {
+  color: whitesmoke;
+}
+
+#con4 {
+  z-index: -4;
+}
+#con4 > .box {
+  color: red;
+}
+
+#con5 {
+  z-index: -5;
+}
+#con5 > .box {
+  color: whitesmoke;
+}
+
+#con6 {
+  z-index: -6;
+}
+#con6 > .box {
+  color: red;
+}
+
+#con7 {
+  z-index: -7;
+}
+#con7 > .box {
+  color: whitesmoke;
+}
+
+#con8 {
+  z-index: -8;
+}
+#con8 > .box {
+  color: red;
+}
+
+#con9 {
+  z-index: -9;
+}
+#con9 > .box {
+  color: whitesmoke;
+}
+
+#pname {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  gap: 12px;
+}
+#pname input {
+  height: 36px;
+  width: 72%;
+  background-color: transparent;
+  color: silver;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-bottom: 1px solid silver;
+  border-radius: 9px;
+}
+
+#pname button {
+  height: 36px;
+  width: 36%;
+  border-radius: 12px;
+  background-color: cyan;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.ani{
+  animation: myAnim 0.3s ease 0s infinite normal forwards;
+}
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Text Comparison</title>
+    <style>
+        .highlight {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1">Text</div>
+    <div id="div2">Text</div>
+    <div id="div3">Text</div>
+
+    <script>
+        function checkDivs() {
+            const div1 = document.getElementById('div1').innerText;
+            const div2 = document.getElementById('div2').innerText;
+            const div3 = document.getElementById('div3').innerText;
+
+            if (div1 === div2 && div2 === div3) {
+                document.getElementById('div1').classList.add('highlight');
+                document.getElementById('div2').classList.add('highlight');
+                document.getElementById('div3').classList.add('highlight');
+            }
+        }
+
+        // Call the function to check the divs
+        checkDivs();
+    </script>
+
+</body>
+</html>
