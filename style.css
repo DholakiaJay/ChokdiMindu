@@ -284,22 +284,40 @@ body {
   width: 36%;
   border-radius: 12px;
   background-color: cyan;
+  color: black;
   font-size: medium;
   font-weight: 600;
 }
-
-.ani{
+#retry {
+  position: absolute;
+  top: 35%;
+  left: 6.3%;
+  height: 36px;
+  width: 6.9%;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  color: red;
+  font-size: medium;
+  font-weight: 600;
+  display: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.ani {
   animation: myAnim 0.3s ease 0s infinite normal forwards;
 }
 @keyframes myAnim {
-	0%,
-	50%,
-	100% {
-		opacity: 1;
-	}
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
 
-	25%,
-	75% {
-		opacity: 0;
-	}
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
